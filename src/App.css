@@ -1,3 +1,33 @@
 .App {
-    text-align: center;
+    font-family: 'Inter';
+    font-family: 'Inter';
+    font-style: normal;
+    background-color: #181818;
+    align-items: center;
+}
+
+h1 {
+    font-weight: 600;
+    font-size: 60px;
+    line-height: 73px;
+}
+
+h2 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 42px;
+    line-height: 51px;
+}
+
+h3 {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 39px;
+}
+
+p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28.97px;
+    line-height: 35px;
 }

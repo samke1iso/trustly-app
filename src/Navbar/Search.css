@@ -1,0 +1,47 @@
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 1px;
+}
+
+input {
+    background: #565656;
+    border-radius: 13.9706px;
+    Width: 350px;
+    Height: 60px;
+    margin-top: 34px;
+    margin-left: 393px;
+    text-align: left;
+    padding-left: 20px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22.353px;
+}
+
+button {
+    background: #565656;
+    border-radius: 13.9706px;
+}
+
+#input_container {
+    position: relative;
+    padding: 0;
+}
+
+#header-search {
+    height: 60px;
+    width: 350px;
+    margin: 0;
+    padding-left: 30px;
+}
+
+#input_img {
+    position: absolute;
+    margin-left: -40px;
+    margin-top: 20px;
+    height: 20.72px;
+    z-index: 1;
+}
