@@ -1,15 +1,15 @@
 import React from 'react';
-import {Nav, Navbar, FormControl, Container, NavDropdown,Offcanvas, Form, Button} from "react-bootstrap";
+import {Nav, Navbar, Container} from "react-bootstrap";
 import icon from "../Icons/Icon.png";
 import filtericon from "../Icons/Filtericon.png";
 import logo from "../logo/Logo.png";
 import button from "../images/login-btn.png";
-
+import SearchBar from './Search';
 import "./navbar.css";
 
 const Navbarbefore = () => {
   return (
-    <div>
+    <div className='nav-container'>
       <Navbar
         collapseOnSelect
         expand="lg"
@@ -19,37 +19,29 @@ const Navbarbefore = () => {
       >
         <Container>
           <Navbar.Brand href="#home">
-            <img src={logo} alt="logo" />
+            <img className="main-logo" src={logo} alt="logo" />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto flex-grow-1">
               <div className="ml-70">
-                <Form className="d-flex">
-                  <FormControl
-                    type="search"
-                    placeholder="Search"
-                    className="me-2"
-                    aria-label="Search"
-                  />
-                  <Button variant="outline-success">Search</Button>
-                </Form>
+                <SearchBar/>
               </div>
               <Nav.Link href="#">
                 {" "}
-                <img src={filtericon} alt="notification-bell" />
+                <img className="filter" src={filtericon} alt="notification-bell" />
               </Nav.Link>
               <Nav.Link href="#">
                 {" "}
-                <div className="mr-60 ml-74"> Review </div>
+                <div className="mr-60 ml-74 review"> Review </div>
               </Nav.Link>
               <Nav.Link href="#">
                 {" "}
-                <div className="mr-74">Community</div>
+                <div className="mr-74 community">Community</div>
               </Nav.Link>
               <Nav.Link href="#">
                 {" "}
-                <img className="ml-74" src={icon} alt="notification-bell" />
+                <img className="ml-74 notification" src={icon} alt="notification-bell" />
               </Nav.Link>
             </Nav>
             <Nav>
