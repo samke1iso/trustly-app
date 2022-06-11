@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
@@ -9,7 +10,9 @@ import signupbtn from "../../images/signup.png"
 
 import "./introstyles.css";
 
+
 const Intro = () => {
+
   return (
     <div className="intro-section">
       <Container bg="dark">
@@ -21,7 +24,11 @@ const Intro = () => {
               An anonymous, diverse community for professionals in tech to be
               heard and supported.
             </p>
-            <img className="signupbtn" src={signupbtn} alt="Trustly" />
+            <Link to="login"><img
+              className="signupbtn"
+              src={signupbtn}
+              alt="Trustly"
+            /></Link>
           </Col>
           <Col sm>
             <img className="introimage" src={typing} alt="Trustly" />
@@ -46,5 +53,6 @@ const Intro = () => {
     </div>
   );
 }
+
 
 export default Intro
