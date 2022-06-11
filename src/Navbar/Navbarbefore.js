@@ -1,8 +1,12 @@
 import React, { Component } from "react";
 import { Navbar, Container, Nav } from "react-bootstrap";
-import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
+import {
+BrowserRouter as Router,
 
-import Homepage from "../Pages/homepage/Homepage";
+  Link,
+} from "react-router-dom";
+
+import Homepage from "../Pages/homepage/Home";
 import Reviews from "../Pages/Reviews";
 import Community from "../Pages/Community";
 import Login from "../Pages/login/Login";
@@ -27,7 +31,7 @@ export default class Navbarbefore extends Component {
             className="gap-3 px-3"
           >
             <Container>
-              <Navbar.Brand href="#home">
+              <Navbar.Brand href="/">
                 <img className="main-logo" src={logo} alt="logo" />
               </Navbar.Brand>
               <Navbar.Toggle aria-controls="navbarScroll" />
@@ -36,7 +40,7 @@ export default class Navbarbefore extends Component {
                   <div className="ml-70">
                     <SearchBar />
                   </div>
-                  <Nav.Link as={Link} to="/homepage">
+                  <Nav.Link as={Link} to="/home">
                     {" "}
                     <img
                       className="filter"
@@ -70,22 +74,7 @@ export default class Navbarbefore extends Component {
             </Container>
           </Navbar>
         </div>
-        <div>
-          <Switch>
-            <Route path="/homepage">
-              <Homepage />
-            </Route>
-            <Route path="/reviews" >
-              <Reviews />
-            </Route>
-            <Route path="/community" >
-              <Community />
-            </Route>
-            <Route path="/login">
-              <Login />
-            </Route>
-          </Switch>
-        </div>
+
       </Router>
     );
   }

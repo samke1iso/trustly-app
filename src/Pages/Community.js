@@ -1,9 +1,7 @@
-import React, { Component } from "react";
+import React from "react";
 
-export default class Community extends Component {
- render(){ return (
-    <div>Community</div>
-  )
-}
+const Community = () => {
+  return <div className="community">Community</div>;
+};
 
-}
+export default Community;
