@@ -31,7 +31,7 @@ export default class Navbarbefore extends Component {
             className="gap-3 px-3"
           >
             <Container>
-              <Navbar.Brand href="/">
+              <Navbar.Brand href="/home">
                 <img className="main-logo" src={logo} alt="logo" />
               </Navbar.Brand>
               <Navbar.Toggle aria-controls="navbarScroll" />
@@ -40,7 +40,7 @@ export default class Navbarbefore extends Component {
                   <div className="ml-70">
                     <SearchBar />
                   </div>
-                  <Nav.Link as={Link} to="/home">
+                  <Nav.Link href="/home">
                     {" "}
                     <img
                       className="filter"
@@ -48,11 +48,11 @@ export default class Navbarbefore extends Component {
                       alt="notification-bell"
                     />
                   </Nav.Link>
-                  <Nav.Link as={Link} to="/reviews">
+                  <Nav.Link href="/reviews">
                     {" "}
                     <div className="mr-60 ml-74 review"> Review </div>
                   </Nav.Link>
-                  <Nav.Link as={Link} to="/community">
+                  <Nav.Link href="/community">
                     {" "}
                     <div className="mr-74 community">Community</div>
                   </Nav.Link>
@@ -66,7 +66,7 @@ export default class Navbarbefore extends Component {
                   </Nav.Link>
                 </Nav>
                 <Nav>
-                  <Nav.Link as={Link} to="/login">
+                  <Nav.Link href="/login">
                     <img className="ml-74" src={button} alt="log in button" />
                   </Nav.Link>
                 </Nav>

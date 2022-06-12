@@ -12,8 +12,7 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <Navbarbefore/>
-      <Home/>
+      <Navbarbefore />
       <div>
         <Switch>
           <Route path="/home">
@@ -30,7 +29,7 @@ function App() {
           </Route>
         </Switch>
       </div>
-      <Footer/>
+      <Footer />
     </div>
   );
 }

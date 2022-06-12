@@ -24,11 +24,11 @@ const Intro = () => {
               An anonymous, diverse community for professionals in tech to be
               heard and supported.
             </p>
-            <Link to="login"><img
+            <a href="/signup1"><img
               className="signupbtn"
               src={signupbtn}
               alt="Trustly"
-            /></Link>
+            /></a>
           </Col>
           <Col sm>
             <img className="introimage" src={typing} alt="Trustly" />

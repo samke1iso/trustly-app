@@ -8,6 +8,7 @@ import Intro3 from "./intro3";
 const Home = () => {
   return (
     <div id="home">
+      
       <Intro />
       <Intro2 />
       <Intro3 />
