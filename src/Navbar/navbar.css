@@ -1,12 +1,14 @@
     .nav-container {
         margin: 0 auto;
         padding: none;
-        width: 1512px;
+        width: 90px;
         height: 123px;
         display: inline-block;
         background-color: #181818;
         font-size: 24px;
         background-color: #181818;
+        margin-left: 10px;
+        ;
     }
     
     navbar {

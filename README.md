@@ -1,3 +1,12 @@
+
+# This project was created as part of the Athena Hackathon
+
+ The team chose to work with the Lloyds brief. As a diverse bunch of women in working in tech, we’re unfortunately no stranger to the lack of inclusivity within the sector. Upon deciding on our theme, we came together and brainstormed ideas which would also complement the Athena event theme.
+
+## View our figma prototype here
+
+This video was submitted during the Athena hackathon 12/06/2022 [video demonstration](https://www.youtube.com/watch?v=jMfr2xmC4Fw&feature=youtu.be).
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
