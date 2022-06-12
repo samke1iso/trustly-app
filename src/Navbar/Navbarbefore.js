@@ -3,13 +3,12 @@ import { Navbar, Container, Nav } from "react-bootstrap";
 import {
 BrowserRouter as Router,
 
-  Link,
 } from "react-router-dom";
 
-import Homepage from "../Pages/homepage/Home";
-import Reviews from "../Pages/Reviews";
-import Community from "../Pages/Community";
-import Login from "../Pages/login/Login";
+//import Homepage from "../Pages/homepage/Home";
+//import Reviews from "../Pages/Reviews";
+//import Community from "../Pages/Community";
+//import Login from "../Pages/login/Login";
 
 import icon from "../Icons/Icon.png";
 import filtericon from "../Icons/Filtericon.png";
@@ -52,11 +51,11 @@ export default class Navbarbefore extends Component {
                     {" "}
                     <div className="mr-60 ml-74 review"> Review </div>
                   </Nav.Link>
-                  <Nav.Link href="/community">
+                  <Nav.Link href="/review">
                     {" "}
                     <div className="mr-74 community">Community</div>
                   </Nav.Link>
-                  <Nav.Link href="#">
+                  <Nav.Link href="/community">
                     {" "}
                     <img
                       className="ml-74 notification"
